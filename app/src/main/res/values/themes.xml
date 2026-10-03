@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Swalekhi" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Let content draw into notch/punch-hole/teardrop cutout areas on all orientations;
+             Compose then pads real content away from status/nav bars and the cutout itself via
+             WindowInsets (see MainActivity/Screen composables), so this works the same regardless
+             of which cutout shape (or none) the device has. -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="28">shortEdges</item>
+    </style>
+</resources>
